@@ -28,7 +28,7 @@ spec:
                 - ALL
             privileged: false
             readOnlyRootFilesystem: true
-          image: kanha05/emailservice:latest
+          image: ogundepoelizabeth/emailservice:1
           ports:
             - containerPort: 8080
           env:
@@ -81,7 +81,7 @@ spec:
       serviceAccountName: default
       containers:
         - name: server
-          image: kanha05/checkoutservice:latest
+          image: ogundepoelizabeth/checkoutservice:1
           ports:
             - containerPort: 5050
           readinessProbe:
@@ -143,7 +143,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
         - name: server
-          image: kanha05/recommendationservice:latest
+          image: ogundepoelizabeth/recommendationservice:1
           ports:
             - containerPort: 8080
           readinessProbe:
@@ -200,7 +200,7 @@ spec:
       serviceAccountName: default
       containers:
         - name: server
-          image: kanha05/frontend:latest
+          image: ogundepoelizabeth/frontend:1
           ports:
             - containerPort: 8080
           readinessProbe:
@@ -297,7 +297,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
         - name: server
-          image: kanha05/paymentservice:latest
+          image: ogundepoelizabeth/paymentservice:1
           ports:
             - containerPort: 50051
           env:
@@ -349,7 +349,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
         - name: server
-          image: kanha05/productcatalogservice:latest
+          image: ogundepoelizabeth/productcatalogservice:1
           ports:
             - containerPort: 3550
           env:
@@ -401,7 +401,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
         - name: server
-          image: kanha05/cartservice:latest
+          image: ogundepoelizabeth/cartservice:1
           ports:
             - containerPort: 7070
           env:
@@ -465,7 +465,7 @@ spec:
                 - ALL
             privileged: false
             readOnlyRootFilesystem: true
-          image: kanha05/loadgenerator:latest
+          image: ogundepoelizabeth/loadgenerator:1
           env:
             - name: FRONTEND_ADDR
               value: "frontend:80"
@@ -496,7 +496,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
         - name: server
-          image: kanha05/currencyservice:latest
+          image: ogundepoelizabeth/currencyservice:1
           ports:
             - name: grpc
               containerPort: 7000
@@ -548,7 +548,7 @@ spec:
       serviceAccountName: default
       containers:
         - name: server
-          image: kanha05/shippingservice:latest
+          image: ogundepoelizabeth/shippingservice:1
           ports:
             - containerPort: 50051
           env:
@@ -654,7 +654,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
         - name: server
-          image: kanha05/adservice:latest
+          image: ogundepoelizabeth/adservice:1
           ports:
             - containerPort: 9555
           env:
